@@ -1,0 +1,14 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "description": "我的第一个npm创建包",
+  "main": "index.js",
+  "scripts": {
+    "test": "dir"
+  },
+  "author": "pujing",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

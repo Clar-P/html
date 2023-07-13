@@ -1,0 +1,184 @@
+/* 主页index.html的样式 */
+
+/* 顶部导航条的容器 */
+.topbar-wrapper{
+    /* 设置宽度全屏 */
+    width: 100%;
+    /* 设置高度和行高 */
+    height: 40px;
+    line-height: 40px;
+    /* 设置背景颜色 */
+    background-color: #333;
+}
+
+/* 设置超链接的颜色 */
+.topbar a{
+    font-size: 12px;
+    color: #b0b0b0;
+    display: block;
+}
+
+/* 设置鼠标移入效果 */
+.topbar a:hover{
+    color: #fff;
+}
+
+/* 设置中间的分割线 */
+.topbar .line{
+    font-size: 12px;
+    color: #424242;
+    margin: 0 8px;    
+}
+
+/* 设置左侧导航栏 */
+.service, .topbar li{
+    float: left;
+}
+
+
+
+.app{
+    position: relative;
+}
+/* 设置app下的小三角 */
+.app::after{
+    display: none;
+    content:'';
+    /* 设置绝对定位 */
+    position: absolute;
+    width: 0;
+    height: 0;
+    /* 设置四个方向的边框 */
+    border: 8px solid transparent;
+    /* 去除上边框 */
+    border-top: none;
+    /* 单独设置下边框的颜色 */
+    border-bottom-color: #fff;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* 
+第一种方法：把display:none 变成block
+li:hover>.app .qrcode,
+li:hover>.app::after{
+    display: block;
+} 
+另一个格式
+.app:hover .qrcode,
+.app:hover::after{
+    display:block
+}
+*/
+/* 第二种方式:把高度为0变成148px,这个方法可以设置二维码下拉过度效果 */
+li:hover>.app .qrcode,
+li:hover>.app::after{
+    display: block;
+    height: 148px;
+}
+/* 设置app的下拉 */
+.app .qrcode{
+    /* display: none; */
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    /* height: 148px; */
+    height: 0;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+    /* transition: 用与为样式设置过度效果 */
+    transition: height 0.3s;
+    
+}
+/* 设置二维码图片 */
+.app .qrcode img{
+    width: 90px;
+    margin:17px;
+    margin-bottom: 10px;
+}
+/* 设置二维码文字 */
+.app .qrcode span{
+    font-size: 14px;
+    color: #000;
+}
+
+
+
+/* 设置右侧导航栏 */
+.shop-cart, .user-info{
+    float: right;
+}
+
+.shop-cart{
+    position: relative;
+    margin-left: 25px;
+}
+
+/* 设置购物车的样式 */
+.shop-cart a{
+    width: 120px;
+    background-color: #424242;
+    text-align: center;    
+}
+.shop-cart:hover a{
+    background-color: #fff;
+    color: #ff6700;
+}
+.shop-cart i {
+    margin-right: 2px;
+}
+/* 设置购物车下拉 */
+.shop-cart .cart-menu{
+    position: absolute;
+    top:40px;
+    left: -197px;
+    width:316px ;
+    line-height: 100px;
+    display: none;
+    border:1px solid #fff;
+    background-color: #fff;
+    border-top: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    text-align: center;
+    /* 祖先元素层级再高也无法盖住后代元素，只能降低后代元素层级，设为-1来盖住 */
+    /* 第二种方法就是给第一个li设置一个.zuigao,让其和menu是兄弟元素就能改兄弟元素层级来覆盖，但是要给zuigao设置定位，才能比较层级大小 */
+    z-index: -1;
+}
+.cart-menu span{
+    display: block;
+}
+.shop-cart:hover li{
+    display: block;
+}
+/* .zuigao{
+    position: relative;
+    z-index: 2;
+} */
+
+
+
+
+/* 设置中间的header */
+.header{
+    height: 100px;
+    background-color: #bfa;
+}
+.header .logo{
+    margin-top: 22.5px;
+    float: left;
+}
+
+.header .logo a{
+    display: block;
+    width: 55px;
+    height: 55px;
+    /* background-color: red; */
+    background-image: url("../img/logo-mi.png");
+    background-size: contain;
+}
+

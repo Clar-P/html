@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字符串</title>
+    <script>
+        /* 
+            字符串
+                -在js中使用单引号或双引号来表示字符串
+                -转义字符\
+                    \" --> "
+                    \' --> '
+                    \\ --> \\
+                    \t --> 制表符
+                    \n --> 换行
+                -模板字符串
+                    使用反单引号`来表示模板字符串
+                    模板字符串中可以嵌入变量
+                -使用typeof 检查一个字符串时会返回string(包括模板字符串)
+        */
+       let a = 'hello'
+       a = '你好'
+
+       let name = '孙悟空'
+       let str = `你好,${name}`
+       console.log(str)
+
+       let  b = 5
+       console.log(`b=${b}`)
+    //    模板字符串嵌入变量，而一般打印字符串只会打印b=${b},并不会随着b的值改变而改变
+
+        let c = '5'
+        console.log(typeof c)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

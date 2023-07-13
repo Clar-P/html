@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        获取用户输入的大于1的整数（暂时不考虑输错的情况）
+            然后编写代码检查这个数是否是质数，并打印结果 
+
+        质数
+            一个数如果只能被1和它本身整数，那么这个数就是质数
+            1既不是质数又不是合数
+        
+        */
+
+        //获取用户输入的整数
+        let num = +prompt('请输入一个大于一的整数')
+        let flag = true
+       for(let i = 2;i < num;i++){
+            if(num % i ===0){
+                //如果9能被i整除，那9就不是质数
+                flag = false
+            }
+        }
+        if(flag){
+            alert(`${num}是质数`)
+        }else{
+            alert(`${num}不是质数`)
+        }
+    
+
+        //编写代码检查num是否是质数
+
+
+        /* 
+            编写代码检查9是否是质数
+                检查9有没有1和9以外的其他因数
+                    如果有，说明9不是
+
+                获取所有的可能整除9的数（1-9）
+                2 3 4 5 6 7 8
+
+                检查这一堆数中是否有能整除9的数
+        */
+       /*
+        let flag = true
+       for(let i = 2;i < 9;i++){
+            if(9 % i ===0){
+                //如果9能被i整除，那9就不是质数
+                flag = false
+            }
+        }
+        if(flag){
+            alert('9是质数')
+        }else{
+            alert('9不是质数')
+        }
+        */
+        
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

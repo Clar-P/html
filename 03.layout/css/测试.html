@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,main,footer {
+            width: 1000px;
+            margin: 10px auto;
+        }
+
+        header {
+            height: 100px;
+            background-color: rgb(33, 129, 240);
+        }
+        main {
+            height: 400px;
+            background-color:black;
+        }
+        main nav,
+        main article,
+        main aside {
+            height: 100%;
+            float: left;
+        }
+        main nav {
+            width:150px;
+            background-color: blue;
+        }
+        main article {
+            width: 680px;
+            background-color: black;
+            margin: 0 10px;
+        }
+
+        .top,.bottom{
+            height: 190px;
+        }
+        .top{
+            width:100% ;
+            background-color: brown;
+        }
+        .bottom{
+            background-color: darkcyan;
+            margin: 20px auto 0;
+        }
+
+        .left,.middle,.right{
+            float: left;
+            height: 100%;
+        }
+        .left{
+            width:220px;
+            background-color: gold;
+        }
+        .middle{
+            width: 220px;
+            background-color: orange;
+            margin: 0 10px;
+        }
+        .right{
+            width: 220px;
+            background-color: darkturquoise;
+        }
+    
+
+        main aside {
+            width: 150px;
+            background-color: greenyellow;
+        }
+
+        footer {
+            height: 100px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头 -->
+    <header></header>
+    <!-- 中 -->
+    <main>
+        <!-- 左边 -->
+        <nav></nav>
+        <!-- 中 -->
+        <article>
+            <!-- 上 -->
+            <div class="top"></div>
+            <!-- 下 -->
+            <div class="bottom">
+                <!-- 左 -->
+                <div class="left"></div>
+                <!-- 中 -->
+                <div class="middle"></div>
+                <!-- 右 -->
+                <div class="right"></div>
+            </div>
+        </article>
+        <!-- 右边 -->
+        <aside></aside>
+    </main>
+    <!-- 脚 -->
+    <footer></footer>
+</body>
+
+
+</html>

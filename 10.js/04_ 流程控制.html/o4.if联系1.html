@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if联系1</title>
+    <script>
+        /* 
+            练习1：
+                编写一个程序，获取一个用户输入的整数，然后通过程序显示这个数是奇数还是偶数
+
+        */
+       
+        //这是我写的,没有考虑用户输入不是整数的情况，要尤其记住=是赋值，===才是相等判断
+       /*
+         let num = +prompt('请输入一个整数：')
+        x = num % 2
+        if(x === 1){
+            alert('这个数是奇数')
+        }else{
+            alert('这个数是偶数')
+        } 
+        */
+
+        //老师写的：
+        //编写一个程序，获取一个用户输入的整数
+        //let num = +prompt('请输入一个整数：')
+        let num = parseInt(prompt('请输入一个整数'))//parseInt给小数取整
+
+        //验证一下，用户的输入是否合法，只有是有效数字时，我们才可以检查他是否是偶数
+        //我们不能使用==或===来检查一个值是否是NaN
+        //可以使用isNaN()函数来检查一个值是否是NaN
+        if (isNaN(num)){
+            alert('你的输入有问题，请输入整数！')
+        }else{
+
+             //然后通过程序显示这个数是奇数还是偶数
+            if (num % 2 === 0){
+                alert(`${num}是偶数`)//反向单引号是模板字符串，用来嵌入东西，相当于python中的槽
+            }else{
+                alert(`${num}是奇数`)
+        }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

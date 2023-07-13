@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //我写
+      /*   src = 80
+        if(src === 100){
+            alert('奖励一辆BMW')
+        }else if(src >= 80 && src <= 99){
+            alert('奖励一台iphone')
+        }else if(src >= 60 && src <= 79){
+            alert('奖励一本参考书')
+        }else{
+
+        } */
+        
+        //从键盘输入小明的期末成绩
+        let score = +prompt('请输入小明的期末成绩')
+
+        //检查score是否合法
+        if(isNaN(score) || score<0 || score>100){
+            alert('请输入一个合法数字')
+        }else{
+            if(score === 100){
+                alert('汽车一辆')
+            }else if(score >= 80){
+                alert('手机一台')
+            }else if(acore >= 60){
+                alert('参考书一本')
+            }else{
+                alert('啥也没有')
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

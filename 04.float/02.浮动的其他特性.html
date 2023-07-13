@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+
+        *{
+            border: 0px;
+            margin: 0px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 浮动元素不会盖住文字，文字会自动环绕在浮动元素的周围，
+                    所以我们可以利用浮动来设置文字环绕图片的效果 */
+            float: left;
+        }
+
+        .box2{
+            background-color:green ;
+
+            /* 元素设置浮动后 ，将会从文档流中脱离，从文档流中脱离后，元素的一些特点也会发生变化*/
+           
+            /* 脱离文档流的特点：
+                    块元素：
+                        1。块元素不再独占页面的一行
+                        2.脱离文档流后，块元素的宽度和高度默认都被内容撑开
+
+                    行内元素：
+                        行内元素脱离文档流后会变成块元素，特点和块元素一样
+                    
+
+                    脱离文档流后，不再需要区分块和行内元素了
+
+            */
+            float: left;
+            margin-top:100px;
+        }
+
+        .box3{
+            background-color:orange ;
+        }
+
+
+        .s1{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+   </style>
+</head>
+<body>
+    <!-- <div class="box1"></div>
+
+    <p>
+        在改造过程中，建筑师保留了原宿舍楼四四方方的建筑形式与山墙屋顶，通过保留钢筋混凝土结构，并拆除建筑前后的屋檐，赋予了建筑新颖的、现代化的外观。其后在原建筑有限的层高内，建筑师对室内空间进行了重新规划，底层空间被完全翻新，并划分为三个不同区域，包括：接待处、洗衣房，以及餐厅。住宅区域则被规划在建筑的二层与三层。
+
+            A traditional boxy form with gable roof building was restored. Reinforced concrete structure has been preserved while the eaves at the front and back of the building was demolished giving a modern and fresh look to the building. With its limited height, new programs were reconfigured. Architects renovated the entirety of the ground floor, divided the ground floor into three distinct zones: – reception, laundry services and restaurant. Residential zone was moved up to the second and third floors.
+    </p> -->
+
+    
+        <div class="box2">hello</div>
+        <div class="box3">hello</div> 
+   
+
+    <span class="s1">我是一个span</span>
+
+</body>
+</html>

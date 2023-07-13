@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <script>
+
+       /*  
+       {
+        let x = +prompt('请输入身高多少cm: ')
+        if(x > 180){
+            y = true
+        }else{
+            y = false
+        }
+
+        let z = +prompt('请输入财富多少万：')
+        if(z > 1000){
+            w = true
+        }else{
+            w = false
+        }
+
+        let m = +prompt('请输入帅气程度多少分：')
+        if(m > 500){
+            n = true
+        }else{
+            n = false
+        }
+
+        if(y && w && n === true){
+            alert('我一定嫁给他')
+        }else if(y || w || n === true){
+            alert('嫁吧，比上不足，比下有余。')
+        }else{
+            alert('不嫁!')
+        }
+        } 
+        */
+
+        //获取男生数据（身高、财富、颜值）
+        let height = +prompt('请输入你的身高（厘米）：')
+        let money = +prompt('请输入你的身价（万）；')
+        let face = +prompt('请输入你的颜值（像素）：')
+
+        //height>180  money>1000  face>500
+        if(height > 180 && money > 1000 && face > 500){
+            alert('一定嫁')
+        }else if(height > 180 || money >1000 || face >500){
+            alert('嫁吧')
+        }else{
+            alert('不嫁')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

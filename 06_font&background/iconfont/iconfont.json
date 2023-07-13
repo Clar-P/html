@@ -1,0 +1,30 @@
+{
+  "id": "4080900",
+  "name": "wode",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1727258",
+      "name": "01运输中、物流",
+      "font_class": "yunshuzhongwuliu",
+      "unicode": "e883",
+      "unicode_decimal": 59523
+    },
+    {
+      "icon_id": "1727280",
+      "name": "10仓库、仓储",
+      "font_class": "cangkucangchu",
+      "unicode": "e88d",
+      "unicode_decimal": 59533
+    },
+    {
+      "icon_id": "1727340",
+      "name": "14签收、审批通过",
+      "font_class": "qianshoushenpitongguo",
+      "unicode": "e891",
+      "unicode_decimal": 59537
+    }
+  ]
+}

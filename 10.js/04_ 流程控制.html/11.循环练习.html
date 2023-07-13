@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习</title>
+    <script>
+       /*  
+       // 求100以内所有3的倍数（求他门个数的总和不包括0）
+        let count = 0//计数器
+        let result = 0//存储计算结果（计算累加结果）
+
+        //求100以内的数
+        for(let i =1; i <100; i++){
+            if(i % 3===0){
+                count++
+                result = result + i
+            }
+        }
+        console.log(`100以内3的倍数有${count}个,加起来的和为${result}`) 
+        */
+
+        
+
+       
+
+
+
+        let count = 0
+        let result = 0
+        for(let i = 3;i<=100;i+=3){
+            count++
+            result += i
+        }
+        console.log(`3的倍数有${count}个，加起来是${result}`)
+
+
+        /* 
+            求1000以内的水仙花数
+                水仙花数：
+                    一个n位数（n>=3）,如果他个位上的数字的n次幂之和还等于这个数，那么这个数就是一个水仙花数
+                    153-->1 5 3 -->1 125 27-->153
+        */
+
+
+                    /* 二次复习重写
+            求100一以内3的倍数：并求他们加起来的和 */
+            /* let counts = 0
+            let results = 0
+            for( let i=0 ; i<100 ; i++){
+                    if(i % 3 ===0){
+                        console.log(i);
+                        counts++
+                        results += i
+                    }
+                }
+            console.log(`100以内3的倍数有${counts}个，加起来是${results}`); */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

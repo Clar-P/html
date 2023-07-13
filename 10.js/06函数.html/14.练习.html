@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /* 
+        
+        //变量和函数的提升同样适用于函数作用域
+        var a = 1
+        function fn(){
+            console.log(a)//undefined
+            var a = 2
+            console.log(a);//2
+        }
+        fn()
+        console.log(a)//1 
+        
+        */
+
+
+         
+        /* 
+
+        var a = 1
+        function fn(){
+            console.log(a)//1
+            a = 2
+            console.log(a);//2
+        }
+        fn()
+        console.log(a)//2 
+
+        */
+
+
+
+         
+        /* 
+
+            //定义形参就相当于在函数中声明了对应的变量，但是没有赋值（所以函数中的a=2，已经被声明，所以不会变成全局变量）
+        var a = 1
+        function fn(a){
+            console.log(a)//undefined(被声明但是没有赋值)
+            a = 2
+            console.log(a);//2
+        }
+        fn()
+        console.log(a)//1
+
+        */
+       
+
+        /*
+        
+        var a = 1
+        function fn(a){
+            console.log(a)//10
+            a = 2
+            console.log(a);//2
+        }
+        fn(10)
+        console.log(a)//1 
+        
+        
+        */
+
+
+
+        /*
+        
+        var a = 1
+        function fn(a){
+            console.log(a)//1
+            a = 2
+            console.log(a);//2
+        }
+        fn(a)
+        console.log(a)//1 
+        
+        
+        */
+
+
+
+
+        console.log(a)//function a(){alert(2)}      //(var a 只是先声明a提升，但赋值1不会提升只会在92行执行，而function a 会赋值，所以会先执行function)
+
+        var a = 1
+        
+        console.log(a)//1
+
+        function a(){
+            alert(2)
+        }
+
+        console.log(a)//1   //function已经被提升提前执行了
+
+        var a = 3
+
+        console.log(a)//3
+
+        var a = function(){
+            alert(4)
+        }
+
+        console.log(a)//function(){alert(4)}
+
+        var a   //var只负责声明，可以没有赋值，但这里是重复声明没有用
+        console.log(a)//function(){alert(4)}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

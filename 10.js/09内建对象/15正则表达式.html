@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            量词
+                {m} 正好m个,只对{}前一个有作用，一组的要用括号括起来  (ab){3}
+                {m,} 至少m个
+                {m,n} m到n个
+                + 一个以上，相当于{1,}
+                * 任意数量的a,相当于{0,}
+                ? 0-1次 ，z相当于{0-1}
+        */
+       let re = /a{3}/
+        let result = re.test('aara') //false
+
+        re = /^a{3}$/
+        result = re.test('a') //false
+
+        re = /^(ab){3}$/
+        result = re.test('abbb') //false
+        result = re.test('ababab') //true
+
+        re = /[a-z]{3}/  //匹配3个任意的小写字母
+        result = re.test('abv')
+
+        re = /[a-z]{1,}/  //匹配一个以上的小写字母
+        result = re.test('acv')
+
+        re = /^[a-z]{1,2}$/
+        result = re.test('awww') //false
+
+        re = /^ba+$/
+        result = re.test('baaaa') //true
+
+        re = /^ba*$/
+        result = re.test('b') //true
+
+        re = /^ba?$/
+        result = re.test('ba') //ture
+
+        console.log(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

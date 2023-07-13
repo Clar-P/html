@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航条</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+
+        body{
+            height: 3000px;
+        }
+
+        .nav{
+            width: 1210px;
+            height: 48px;
+            background-color:#e8e7e3;
+            margin:100px auto;
+            /* 
+                粘滞定位：
+                    当元素的position属性设置为sticky时3则开启了元素的粘滞定位
+                    粘滞定位和相对定位的特点基本一致：
+                        不同的是粘滞定位可以在元素到达某个位置时将其固定
+            */
+
+            position: sticky;
+            top: 0;
+
+        }
+
+        .nav div{
+            float: left;
+            height: 48px;
+            /* 设置字体居中 */
+            line-height: 48px;
+            
+        }
+        
+
+        a{
+            /* 将a转换为块元素 */
+            display: block;
+            /* 去除下划线 */
+            text-decoration: none;
+            color: #777777;
+            font-size: 18px;
+            padding: 0 39px;
+
+        }
+
+        /* 调节框大小 */
+        .nav div:last-child a{
+            padding:0 42px 0 41px;
+        }
+
+        /* 设置鼠标移入效果 */
+        a:hover{
+            background-color:#3f3f3f ;
+            color: #e8e7e3;
+        }
+    </style>
+</head>
+<body>
+    <!-- 创建导航条结构 -->
+   <div class="nav">
+        <div>
+            <a href="#">HTML/CSS</a>
+        </div>
+        <div>
+            <a href="#">Browser Side</a>
+        </div>
+        <div>
+            <a href="#">Server Side</a>
+        </div>
+        <div>
+            <a href="#">Programming</a>
+        </div>
+        <div>
+            <a href="#">XML</a>
+        </div>
+        <div>
+            <a href="#">Web Building</a>
+        </div>
+        <div class="seven">
+            <a href="#">Reference</a>
+        </div>
+   </div>
+</body>
+</html>

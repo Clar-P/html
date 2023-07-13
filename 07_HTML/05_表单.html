@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" autocomplete="off">
+        <!-- 
+            autocomplete="off" 关闭自动补全 要关闭全部自动补全，可以在 form 中写 
+            readonly 将表单项设置为只读,数据会提交
+            disabled 将表单项设置为禁用,数据不会提交
+            autofocus 设置表单项自动获取焦点
+        -->
+        <input type="text" name="username" autocomplete="off">
+        <br><br>
+        <input type="text" name="a" value="云南大学" readonly>
+        <br><br>
+        <input type="text" name="b" autofocus>
+        <br><br>
+
+        <!-- <input type="color"> -->
+        <!-- <input type="email"> -->
+
+        <input type="submit">
+        <!-- 重置按钮 -->
+        <input type="reset">
+        <!-- 普通的按钮 -->
+        <input type="button" value="按钮">
+        <br><br>
+
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+        <button type="button">普通按钮</button>
+
+    </form>
+</body>
+</html>

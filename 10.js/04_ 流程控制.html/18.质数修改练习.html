@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /* 
+            优化前：
+                1.1000以内:198ms
+                2,100000以内：28202ms
+
+            优化后：
+                1.30ms
+                2.2331ms
+
+            问：如何修改代码，使得性能提升
+
+        */
+        /* 
+            练习：
+                编写代码，求100以内所有的质数
+        */
+        //开始一个计时器
+        console.time('质数练习:')
+        for (let i = 2; i < 100000; i++) {
+            let flag = true
+
+            for (let j = 2; j < i; j++) {
+                if (i % j === 0) {
+                    flag = false
+                    //进入判断说明i一定不是质数，后面的其他数字检查没有执行的必要,减少不必要的数字检查
+                    break
+                }
+            }
+
+            if (flag) {
+                console.log(i)
+            }
+        }
+        //结束计时器
+        console.timeEnd('质数练习:')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
